@@ -1,9 +1,47 @@
-.kk {
-  background-color: aqua;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.hero-wrapper {
+  background-color: #00dffc;
   padding: 30px;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .jj {
-  background-color: cadetblue;
-  padding: 1000px;
+  background-color: aqua;
+  padding: 10px;
+}
+
+.main-header {
+  color: yellow;
+  text-transform: uppercase;
+  font-size: 60px;
+  font-family: serif;
+}
+
+.flash {
+  animation: flashWorld 0.1s infinite;
+}
+
+@keyframes flashWorld {
+  0% {
+    color: transparent;
+  }
+  25% {
+    color: green;
+  }
+  50% {
+    color: yellow;
+  }
+  75% {
+    color: red;
+  }
+  100% {
+    color: transparent;
+  }
 }
